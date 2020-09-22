@@ -1,0 +1,12 @@
+version: '2.4'
+services:
+  haproxy:
+    image: haweb:latest
+    ports:
+    - 80:80/tcp
+  web1:
+    image: dockercloud/hello-world
+  web2:
+    image: dockercloud/hello-world
+  web3:
+    image: dockercloud/hello-world
